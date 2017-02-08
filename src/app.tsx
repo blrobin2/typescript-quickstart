@@ -1,11 +1,11 @@
 import * as React from 'react'
 import {render} from 'react-dom'
 
-const Hello = (props: { compiler: string, framework: string }) => {
+const Hello = ({ compiler, framework }: { compiler: string, framework: string }) => {
   return (
     <div>
-      <div>{props.compiler}</div>
-      <div>{props.framework}</div>
+      <div>{compiler}</div>
+      <div>{framework}</div>
     </div>
   )
 }
